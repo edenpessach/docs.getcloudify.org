@@ -2,7 +2,7 @@
 layout: bt_wiki
 title: LDAP and Managing Users
 category: Manager
-draft: true
+draft: false
 weight: 890
 ---
  Click here for additional information about [managing users]({{< relref "cli/users.md" >}}) and here for information about [managing user groups]({{< relref "cli/user-groups.md" >}}).
