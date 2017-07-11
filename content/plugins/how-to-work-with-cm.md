@@ -8,9 +8,9 @@ weight: 3000
 
 It is common to rely on a configuration management tool to deploy and configure part or all of your deployments, such as Salt, Ansible, Chef, or Puppet.
 
-There is no single appropriate way to integrate Cloudify with a CM. You will want to take advantage of specific features of your own CM, meaning that a one-size-fits-all plugin is impossible. For example, you might use a standalone executions model such as Ansible ad-hoc commands for their CM, while others use a service model such as Puppet Server.
+There is no single appropriate way to integrate Cloudify with a configuration management tool. You will want to leverage specific features of your own tool, meaning that a one-size-fits-all plugin is not feasible. For example, you might use a standalone executions model such as Ansible ad-hoc commands for their config management tool, whereas someone else might use a service model such as Puppet Server.
 
-Cloudify enables you to orchestrate your repeated actions as they relate to your preferred CM, via the Script plugin or Fabric plugin. For example, if you have an existing Puppet server that operates on the server-agent model, you can use a relationship to add the private IP of the VM to the main manifest, as shown below.
+Cloudify enables you to orchestrate your repeated actions as they relate to your preferred configuration management tool, via the Script plugin or Fabric plugin. For example, if you have a Puppet server that operates on the server-agent model, you can use a relationship to add the private IP of the VM to the main manifest, as shown below.
 
 ```
 relationships:
@@ -54,7 +54,7 @@ node_templates:
         target:  puppet_server
 ```
 
-Another approach is to use the CM's standalone command from the Script plugin, as follows.
+Another approach is to use a configuration management tool's standalone command from the Script plugin, as follows.
 
 ```
   new_vm:

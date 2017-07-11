@@ -5,7 +5,7 @@ category: Plugins
 draft: false
 weight: 1450
 ---
-## Overview
+
 
 Cloudify supports integrations with Docker and Docker-based container managers, including Docker, Docker Swarm, Docker Compose, Kubernetes, and Apache Mesos.  Cloudify can both manage container infrastructure, and/or orchestrate the services that run on container platforms. When orchestrating container orchestrators (such as Kubernetes, Docker Swarm, and Mesos), Cloudify provides infrastructure management capabilities such as installation, auto healing and scaling. When orchestrating services on these platforms, Cloudify integrates seamlessly with native descriptors to not only support container cluster service deployment, but also to enable orchestrations that encompass systems beyond the edges of the container cluster.
 
