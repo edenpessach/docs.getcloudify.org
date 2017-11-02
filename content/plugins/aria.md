@@ -9,7 +9,7 @@ weight: 10000
 ---
 {{% gsSummary %}} {{% /gsSummary %}}
 
-Plugin Description
+The ARIA plugin enables to use TOCSA-based service-templates for deploying services and applications.
 
 
 
