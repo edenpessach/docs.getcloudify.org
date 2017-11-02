@@ -15,6 +15,7 @@ Plugin Description
 
 # Plugin Requirements
 
+* Python version 2.7.x
 
 
 # Compatibility
