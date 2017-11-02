@@ -27,7 +27,7 @@ Plugin Description
 
 
 
-      
+
 
 # Terminology
 
@@ -42,3 +42,24 @@ This section describes the [node type]({{< relref "blueprints/spec-node-types.md
 See the [relationships]({{< relref "blueprints/spec-relationships.md" >}}) section.
 
 # Examples
+
+This example demonstrates how to use the cloudify-aria-plugin. The example sets a path to a TOSCA CSAR package. The package is located in path relative to the blueprint.
+
+```yaml
+
+tosca_definitions_version: cloudify_dsl_1_3
+
+imports:
+  - http://www.getcloudify.org/spec/cloudify/4.2/types.yaml
+  - https://raw.githubusercontent.com/cloudify-cosmo/cloudify-aria-plugin/master/plugin.yaml
+
+node_templates:
+  aria_node:
+    type: cloudify.aria.nodes.Service
+    properties:
+      csar_path: resources/hello-world.csar
+
+outputs:
+  http_endpoint:
+    description: Web server external endpoint
+    value: { get_attribute: [aria_node, port] }
