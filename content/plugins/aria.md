@@ -20,10 +20,9 @@ Plugin Description
 # Compatibility
 
 
+This version of Cloudify is only compatible with ARIA Plugin version 1.0, and later. 
 
-{{% gsNote title="Note" %}}
- .
-{{% /gsNote %}}
+The ARIA plugin uses ARIA 0.1.1.
 
 
 
